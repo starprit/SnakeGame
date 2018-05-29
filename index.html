@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='css/stylesheet.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='js/snake.js'></script>
+	<script>
+			function IsEmpty(){
+				if(document.forms['form'].size.value === "") {
+					alert("Rozmiar nie moze byc pusty");
+					window.location.reload();
+				}
+			}
+        </script>
+    <title>Snake</title>
+</head>
+<body>
+<h2>Instrukcja: uzywaj strzalek do poruszania</h1>
+<form name="form">
+    Szybkosc weza: <br>
+    <input type="radio" name="speed" value="140" checked> Normalna<br>
+    <input type="radio" name="speed" value="100"> Szybka<br>
+    <input type="radio" name="speed" value="dynamic"> Dynamiczna <br><br>
+    Rozmiar planszy:<br>
+    <input type="text" name="size">
+    <br><br>
+    <button id="accept" type="button" onclick="IsEmpty()">Potwierdz</button>
+</form>
+
+<p class='description game'></p>
+<table id="matrix" class="game"></table>
+
+<button class="game" id="id1" type="button">START/STOP</button>
+<button class="game" id="id2" type="button">RESET GAME</button>
+
+</body>
+</html>

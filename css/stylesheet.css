@@ -1,0 +1,47 @@
+* {
+    background-color: Cyan;
+}
+
+table {
+    background-color: orange;
+    color: Green;
+}
+
+tr {
+    height: 25px;
+
+}
+
+td {
+    width: 25px;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: Green;
+    font-size: 16px;
+}
+
+.food {
+    background-color: #333333 !important;
+    /*color: whitesmoke;*/
+}
+.snake {
+    background-color: yellow;
+    color: Yellow;
+}
+
+.head {
+    background-color: red;
+}
+
+.game {
+    display: none;
+}
+
+.description {
+    background-color: Pink;
+}
+.dest {
+    background-color: Orange;
+}
